@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<!-- Tema base de la app -->
+	<style name="Maui.MainTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<!-- Color de la barra de estado -->
+		<item name="android:statusBarColor">@android:color/transparent</item>
+		<!-- Color del fondo de la aplicación -->
+		<item name="android:windowBackground">@android:color/white</item>
+		<!-- Configuraciones adicionales -->
+	</style>
+
+	<!-- Tema transparente o para splash -->
+	<!--<style name="Maui.TranslucentTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>-->
+	<style name="Theme.AppCompat.Translucent">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation</item>
+	</style>
+</resources>

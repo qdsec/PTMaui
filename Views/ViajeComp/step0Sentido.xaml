@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step0Sentido">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#fffafafa" Padding="0,40,0,0" Spacing="20">
+            <Label x:Name="lblSentido"
+                   Text="Seleccione el sentido de su viaje"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontAttributes="Bold" />
+
+            <StackLayout Padding="40,0,40,0">
+                <Picker x:Name="piViajeIda"
+                        Title="Seleccione el Origen"
+                        HorizontalTextAlignment="Center"
+                        SelectedIndexChanged="PiViajeIda_SelectedIndexChanged"
+                        FontSize="Large"
+                        HeightRequest="50" />
+            </StackLayout>
+
+            <StackLayout Padding="40,0,40,0">
+                <Picker x:Name="piViajeRegreso"
+                        Title="Seleccione el Destino"
+                        HorizontalTextAlignment="Center"
+                        SelectedIndexChanged="PiViajeRegreso_SelectedIndexChanged"
+                        FontSize="Large"
+                        HeightRequest="50" />
+            </StackLayout>
+
+            <Label x:Name="LabelError"
+                   TextColor="Red"
+                   HorizontalOptions="Center" />
+
+            <StackLayout Padding="40,0,40,20"
+                         VerticalOptions="EndAndExpand"
+                         Orientation="Horizontal">
+                <ImageButton x:Name="btnNext"
+                             Source="flechaadelante.png"
+                             WidthRequest="60"
+                             HeightRequest="60"
+                             HorizontalOptions="EndAndExpand"
+                             BackgroundColor="Transparent"
+                             Clicked="btnNext_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step3tEspecial"
+             BackgroundColor="#fffafafa">
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <!-- Definimos dos filas -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <!-- Contenido scrollable -->
+            <RowDefinition Height="Auto" />
+            <!-- Botón fijo -->
+        </Grid.RowDefinitions>
+
+        <!-- Contenido scrollable -->
+        <ScrollView Grid.Row="0">
+            <StackLayout Padding="20">
+
+                <Label Text="La información que nos proporciones nos ayudará a brindarte un mejor servicio" FontAttributes="Bold" FontSize="Medium"/>
+                <!-- Título -->
+                <Label Text="¿Cuál es el motivo de su viaje?" FontAttributes="Bold" Margin="0,15,0,0"/>
+                <Entry x:Name="txtMotivoViaje" Placeholder="Ejemplo: cita médica, reunión, paseo." />
+
+                <Label Text="¿A qué hora debe llegar a su destino?" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <TimePicker x:Name="timeLlegada" 
+                                                Format="HH:mm"
+                                                Time="00:00:00"/>
+
+                <!--<Label Text="¿Antes de viajar está realizando otra actividad?" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry x:Name="txtOtraActividad" Placeholder="*Opcional" />-->
+
+                <Label Text="¿A partir de qué hora desea que el vehículo le espere?" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <TimePicker x:Name="timeEspera" 
+                                                Format="HH:mm"
+                                                Time="00:00:00"/>
+
+                <Label Text="¿Tienes un requerimiento especial?" FontAttributes="Bold" Margin="0,20,0,0"/>
+                <Frame BorderColor="LightGray" HasShadow="False" Padding="0">
+                    <Editor x:Name="txtRequerimientoEspecial"
+            Placeholder="*Opcional"
+            PlaceholderColor="Gray"
+            BackgroundColor="White"
+            TextColor="Black"
+            Keyboard="Text"
+            HeightRequest="100"
+            AutoSize="Disabled"
+            TextChanged="OnEditorTextChanged" />
+                </Frame>
+
+
+                <!-- Mensaje de error -->
+                <Label x:Name="LabelError" TextColor="Red" Margin="0,0,0,20"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Footer con botón fijo -->
+        <Grid Grid.Row="1" Padding="20,10">
+            <ImageButton x:Name="btnNext"  
+                         Source="flechaadelante.png" 
+                         WidthRequest="60" 
+                         HeightRequest="60"  
+                         BackgroundColor="Transparent" 
+                         Clicked="btnNext_Clicked" 
+                         HorizontalOptions="End"
+                         VerticalOptions="End"/>
+        </Grid>
+
+    </Grid>
+</ContentPage>

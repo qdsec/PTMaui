@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.ViajeDetallePage"
+             BackgroundColor="#FAFAFA">
+
+    <ScrollView>
+        <StackLayout Padding="15" Spacing="15">
+
+            <!-- ===== TÍTULO ===== -->
+            <Label Text="{Binding Titulo}"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   Margin="0,20,0,10"/>
+
+            <!-- ===== FECHA Y HORA ===== -->
+            <Frame CornerRadius="12" Padding="15" HasShadow="True">
+                <StackLayout Spacing="6">
+                    <Label Text="{Binding Fecha}" FontAttributes="Bold"/>
+                    <Label Text="{Binding Hora}"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- ===== ORIGEN / DESTINO ===== -->
+            <Frame CornerRadius="12" Padding="15" HasShadow="True">
+                <StackLayout Spacing="8">
+                    <Label Text="🚏 Origen" FontAttributes="Bold" TextColor="#fc940c"/>
+                    <Label Text="{Binding Origen}" LineBreakMode="WordWrap"/>
+
+                    <Label Text="📍 Destino" FontAttributes="Bold" TextColor="#fc940c" Margin="0,10,0,0"/>
+                    <Label Text="{Binding Destino}" LineBreakMode="WordWrap"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- ===== VIAJE ===== -->
+            <Frame IsVisible="{Binding EsViaje}"
+                   CornerRadius="12"
+                   Padding="15"
+                   HasShadow="True">
+
+                <StackLayout Spacing="8">
+
+                    <Label Text="Datos del viaje"
+                           FontAttributes="Bold"
+                           TextColor="#fc940c"/>
+
+                    <Label Text="{Binding Nombre}" FontAttributes="Bold"/>
+                    <Label Text="{Binding Telefono}"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Pasajeros: " FontAttributes="Bold"/>
+                        <Label Text="{Binding Pasajeros}"/>
+                    </StackLayout>
+
+                    <Label Text="Requerimientos" FontAttributes="Bold"/>
+                    <Label Text="{Binding Requerimientos}" LineBreakMode="WordWrap"/>
+
+                    <!-- ===== PARRILLA VIP ===== -->
+                    <StackLayout IsVisible="{Binding MostrarParrilla}" Orientation="Horizontal">
+                        <Label Text="🪑 Parrilla: " FontAttributes="Bold"/>
+                        <Label Text="{Binding ParrillaTexto}"/>
+                    </StackLayout>
+
+                    <!-- ===== PASAJEROS / HIJOS ===== -->
+                    <Label Text="👤 Pasajeros" FontAttributes="Bold" Margin="0,10,0,0"/>
+                    <Label Text="{Binding Hijos}" LineBreakMode="WordWrap"/>
+
+                </StackLayout>
+            </Frame>
+
+            <!-- ===== ENCOMIENDA ===== -->
+            <Frame IsVisible="{Binding EsEncomienda}"
+                   CornerRadius="12"
+                   Padding="15"
+                   HasShadow="True">
+
+                <StackLayout Spacing="8">
+
+                    <Label Text="Datos de la encomienda"
+                           FontAttributes="Bold"
+                           TextColor="#fc940c"/>
+
+                    <Label Text="Remitente" FontAttributes="Bold"/>
+                    <Label Text="{Binding Remitente}"/>
+                    <Label Text="{Binding TelRemitente}"/>
+
+                    <Label Text="Receptor" FontAttributes="Bold" Margin="0,10,0,0"/>
+                    <Label Text="{Binding Receptor}"/>
+                    <Label Text="{Binding TelReceptor}"/>
+
+                    <Label Text="Detalle" FontAttributes="Bold" Margin="0,10,0,0"/>
+                    <Label Text="{Binding DetalleEncomienda}" LineBreakMode="WordWrap"/>
+
+                    <Label Text="{Binding GestionRetiroTexto}"/>
+                    <Label Text="{Binding GestionEntregaTexto}"/>
+
+                    <Label Text="{Binding ValorEnvioTexto}" FontAttributes="Bold"/>
+
+                    <!-- FOTO -->
+                    <Button Text="📷 Ver Imagen"
+                            IsVisible="{Binding MostrarFoto}"
+                            Command="{Binding VerImagenCommand}"
+                            BackgroundColor="#fc940c"
+                            TextColor="White"
+                            CornerRadius="8"/>
+
+                </StackLayout>
+            </Frame>
+
+            <!-- ===== TOTAL ===== -->
+            <Frame CornerRadius="12"
+                   Padding="15"
+                   HasShadow="True"
+                   BackgroundColor="#F1F8E9">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Total: " FontAttributes="Bold"/>
+                    <Label Text="{Binding Total}" FontAttributes="Bold" TextColor="Green"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- ===== TÉRMINOS ===== -->
+            <Label Text="Acepto los términos y condiciones"
+                   TextColor="#fc940c"
+                   TextDecorations="Underline"
+                   HorizontalOptions="Center">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding TapCommand}"
+                        CommandParameter="{Binding DynamicUrl}" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

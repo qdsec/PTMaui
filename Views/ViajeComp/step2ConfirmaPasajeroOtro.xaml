@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step2ConfirmaPasajeroOtro">
+    <ContentPage.Content>
+        <!--<Grid BackgroundColor="#fffafafa">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="1" Padding="40,30,40,0">
+                    <Label x:Name="lblDatos" Text="Ingrese los datos de quien viaja" HorizontalOptions="Center" TextColor="Black" FontSize="Medium" Margin="0,0" HorizontalTextAlignment="Center"  FontAttributes="Bold"></Label>
+
+                    <StackLayout x:Name="pnlDatos" Orientation="Vertical" HorizontalOptions="Center" >
+                        <Entry x:Name="txtNombre"  Placeholder="Nombres y Apellidos" PlaceholderColor="Gray" BackgroundColor="#fffafafa" TextColor="black" WidthRequest="150" MaxLength="25"/>
+                        <Entry x:Name="txtEmpresa"  Placeholder="Empresa o Institución" PlaceholderColor="Gray" BackgroundColor="#fffafafa" TextColor="black" WidthRequest="150" MaxLength="25"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                            <Image  Source="iconocel.png" WidthRequest="50"  HeightRequest="50" />
+                            -->
+        <!--<Label Text="+593" HorizontalOptions="Center" FontSize="Small" Margin="0,30" FontAttributes="Bold"></Label>-->
+        <!--
+                            <Entry x:Name="txtCelular" Placeholder="Número de Celular" PlaceholderColor="Gray"  BackgroundColor="#fffafafa" TextColor="black" Keyboard="Numeric" WidthRequest="170" MaxLength="10"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" x:Name="pnlEnc" HorizontalOptions="Center" >
+                            <Label x:Name="lblRecibe" Text="Datos de quien recibe la encomienda" HorizontalOptions="Center" TextColor="CornflowerBlue" FontSize="Medium" Margin="0,0" HorizontalTextAlignment="Center"  FontAttributes="Bold"></Label>
+                            <Entry x:Name="txtReceptorNombre"  Placeholder="Nombre y Apellido" PlaceholderColor="Gray" BackgroundColor="#fffafafa" TextColor="black" WidthRequest="150" MaxLength="25"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="30,0,10,0" >
+                            <Label Text="En caso de que ingreses mal tu número o no podamos contactarnos contigo." 
+                               HorizontalOptions="FillAndExpand" 
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalTextAlignment="Start" 
+                                   FontSize="Medium"/>
+                        </StackLayout>                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                            <Image  Source="iconocel.png" WidthRequest="50"  HeightRequest="50" />
+                            -->
+        <!--<Label Text="+593" HorizontalOptions="Center" FontSize="Small" Margin="0,30" FontAttributes="Bold"></Label>-->
+        <!--
+                            <Entry x:Name="txtCelularReceptor" Placeholder="Número Alternativo" PlaceholderColor="Gray"  BackgroundColor="#fffafafa" TextColor="black" Keyboard="Numeric" WidthRequest="170" MaxLength="10"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" x:Name="pnlEnc2" HorizontalOptions="Center" >
+                            <Label Text="Descripción de la encomienda" HorizontalOptions="Center" TextColor="CornflowerBlue" FontSize="Medium" Margin="0,0" HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
+                            <Frame BorderColor="Black" BackgroundColor="#fffafafa" Padding="8">
+                                <Editor x:Name="txtDescEnco" TextColor="black" HeightRequest="60"  WidthRequest="200" MaxLength="55" />
+                            </Frame>
+                        </StackLayout>
+
+                        <Label x:Name="LabelError" TextColor="Red"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="40,0,40,40">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton x:Name="btnNext"  Source="flechaadelante.png" WidthRequest="60" HorizontalOptions="EndAndExpand" HeightRequest="60"  BackgroundColor="Transparent" Clicked="btnNext_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>-->
+        <Grid BackgroundColor="#fffafafa">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <!-- Scrollable -->
+                <RowDefinition Height="Auto"/>
+                <!-- Botón -->
+            </Grid.RowDefinitions>
+
+            <ScrollView Grid.Row="0">
+                <StackLayout x:Name="pnlContenido" Padding="40,30,40,30" Spacing="20">
+                    <!-- Sección dinámica de pasajeros -->
+                    <StackLayout x:Name="pnlPasajeros" Spacing="15">
+                        <Label x:Name="lblDatos" Text="Ingrese los datos de quien viaja" HorizontalOptions="Center" TextColor="Black" FontSize="Medium" Margin="0,0" HorizontalTextAlignment="Center"  FontAttributes="Bold"></Label>
+                    </StackLayout>
+
+                    <!-- Sección fija de encomienda -->
+                    <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Image Source="iconocel.png" WidthRequest="50" HeightRequest="50"/>
+                        <Entry x:Name="txtCelularReceptor"
+                       Placeholder="Número Alternativo"
+                       PlaceholderColor="Gray"
+                       BackgroundColor="#fffafafa"
+                       TextColor="black"
+                       Keyboard="Numeric"
+                       WidthRequest="170"
+                       MaxLength="10"/>
+                    </StackLayout>-->
+
+                    <!--<StackLayout Orientation="Vertical" x:Name="pnlEnc" HorizontalOptions="Center">
+                        <Label Text="Descripción de la encomienda"
+                       HorizontalOptions="Center"
+                       TextColor="CornflowerBlue"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                        <Frame BorderColor="Black"
+                       BackgroundColor="#fffafafa"
+                       Padding="8">
+                            <Editor x:Name="txtDescEnco"
+                            TextColor="black"
+                            HeightRequest="60"
+                            WidthRequest="200"
+                            MaxLength="55"/>
+                        </Frame>
+                    </StackLayout>-->
+
+                    <Label x:Name="LabelError" TextColor="Red"/>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Botón fijo abajo -->
+            <StackLayout Grid.Row="1" Padding="40,0,40,40">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton x:Name="btnNext"
+                         Source="flechaadelante.png"
+                         WidthRequest="60"
+                         HorizontalOptions="EndAndExpand"
+                         HeightRequest="60"
+                         BackgroundColor="Transparent"
+                         Clicked="btnNext_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

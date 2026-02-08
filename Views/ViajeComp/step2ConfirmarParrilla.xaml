@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step2ConfirmarParrilla"
+             BackgroundColor="White">
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Contenido principal con scroll -->
+        <ScrollView Grid.Row="0">
+            <StackLayout Padding="20" Spacing="20">
+
+                <!-- Pregunta -->
+                <Label Text="¿Te gustaría que el vehículo tenga una parrilla para llevar más equipaje?"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" />
+
+                <!-- Imagen reducida -->
+                <Frame BorderColor="LightGray"
+                       CornerRadius="10"
+                       HasShadow="False"
+                       VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand">
+                    <Image Source="http://quantumdsec-001-site1.gtempurl.com/admpage/img/peterParrilla.png"
+                           Aspect="AspectFit"
+                           HeightRequest="250" />
+                </Frame>
+
+                <!-- Selector Sí / No -->
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center"
+                             Spacing="40">
+                    <RadioButton x:Name="rbSi"
+                                 Content="Sí"
+                                 GroupName="opcionParrilla"
+                                 Value="1"
+                                 CheckedChanged="rbSi_CheckedChanged" />
+                    <RadioButton x:Name="rbNo"
+                                 Content="No"
+                                 GroupName="opcionParrilla"
+                                 Value="0" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Botón Next fijo abajo -->
+        <Grid Grid.Row="1" Padding="20,10">
+            <ImageButton x:Name="btnNext"
+                         Source="flechaadelante.png"
+                         WidthRequest="60"
+                         HeightRequest="60"
+                         BackgroundColor="Transparent"
+                         Clicked="btnNext_Clicked"
+                         HorizontalOptions="End"
+                         VerticalOptions="End"/>
+        </Grid>
+    </Grid>
+</ContentPage>

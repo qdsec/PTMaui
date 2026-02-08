@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.Mapa"
+             BackgroundColor="#fffafafa">
+    <ContentPage.Resources>
+        <Style x:Key="BotonServicioEstilo" TargetType="Border">
+            <Setter Property="BackgroundColor" Value="#FF9900" />
+            <Setter Property="HeightRequest" Value="55" />
+            <Setter Property="StrokeShape" Value="RoundRectangle 10" />
+            <Setter Property="Margin" Value="0,0,0,5" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+
+        <Style x:Key="BotonLabelEstilo" TargetType="Label">
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="Margin" Value="0,0,10,0" />
+        </Style>
+
+        <Style x:Key="BotonGridEstilo" TargetType="Grid">
+            <Setter Property="ColumnDefinitions" Value="Auto, *" />
+            <Setter Property="Padding" Value="10,0" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20, 10, 20, 10" Spacing="0">
+
+            <Image Source="peterlogomenu.png" WidthRequest="120" HeightRequest="70" HorizontalOptions="Center" Margin="0,0,0,10"/>
+
+            <VerticalStackLayout Spacing="0" Margin="0,0,0,10">
+
+                <Border Style="{StaticResource BotonServicioEstilo}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnViajeCom_Clicked" NumberOfTapsRequired="1"/>
+                    </Border.GestureRecognizers>
+                    <Grid Style="{StaticResource BotonGridEstilo}">
+                        <Image Grid.Column="0" Source="icono_compartido.png" WidthRequest="30" HeightRequest="30" Margin="15,0,15,0"/>
+                        <Label Grid.Column="1" Text="Viaje compartido" Style="{StaticResource BotonLabelEstilo}"/>
+                    </Grid>
+                </Border>
+
+                <Border Style="{StaticResource BotonServicioEstilo}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnViajeVIP_Clicked" NumberOfTapsRequired="1"/>
+                    </Border.GestureRecognizers>
+                    <Grid Style="{StaticResource BotonGridEstilo}">
+                        <Image Grid.Column="0" Source="icono_exclusivo.png" WidthRequest="30" HeightRequest="30" Margin="15,0,15,0"/>
+                        <Label Grid.Column="1" Text="Viaje exclusivo" Style="{StaticResource BotonLabelEstilo}"/>
+                    </Grid>
+                </Border>
+
+                <Border Style="{StaticResource BotonServicioEstilo}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnEncomienda_Clicked" NumberOfTapsRequired="1"/>
+                    </Border.GestureRecognizers>
+                    <Grid Style="{StaticResource BotonGridEstilo}">
+                        <Image Grid.Column="0" Source="icono_encomienda.png" WidthRequest="30" HeightRequest="30" Margin="15,0,15,0"/>
+                        <Label Grid.Column="1" Text="Encomiendas" Style="{StaticResource BotonLabelEstilo}"/>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="borderVerViaje" Style="{StaticResource BotonServicioEstilo}">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnVerViaje_Clicked" NumberOfTapsRequired="1"/>
+                    </Border.GestureRecognizers>
+                    <Grid Style="{StaticResource BotonGridEstilo}">
+                        <Image x:Name="imgIconoVerViaje" Grid.Column="0" Source="icono_calendario.png" WidthRequest="30" HeightRequest="30" Margin="15,0,15,0"/>
+                        <Label Grid.Column="1" Text="Mis Viajes" Style="{StaticResource BotonLabelEstilo}"/>
+                    </Grid>
+                </Border>
+
+            </VerticalStackLayout>
+
+            <Image Source="http://quantumdsec-001-site1.gtempurl.com/admpage/img/PeterMenuPrincipal2.jpg"
+                   Aspect="AspectFill"
+                   WidthRequest="350"  
+                   HeightRequest="300"  HorizontalOptions="Center" Margin="0,15,0,10"/>
+
+            <VerticalStackLayout HorizontalOptions="Center" Spacing="5" Margin="0,5,0,10" x:Name="layoutComWpp">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="btnComWpp_Clicked" NumberOfTapsRequired="1"/>
+                </VerticalStackLayout.GestureRecognizers>
+                <Image Source="icono_asesor.png" WidthRequest="50" HeightRequest="50"/>
+                <Label Text="Comunícate con un asesor" TextColor="Black" FontSize="16"/>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Padding="0,5,0,0">
+                <ImageButton x:Name="btnCerrarSesion" Source="botoncerrars.png" WidthRequest="160" Clicked="btnCerrarSesion_Clicked"/>
+                <ImageButton x:Name="btnEliminarUsuario" Source="botoneliminarusuario.png" WidthRequest="160" Clicked="btnEliminarUsuario_Clicked"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.step1nombre">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#fffafafa">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ImageButton  Source="flechaatras.png" WidthRequest="60" HorizontalOptions="Start" HeightRequest="60" Margin="30,40,0,0" Clicked="Back_Click" BackgroundColor="Transparent"/>
+                <StackLayout Grid.Row="1" Padding="50">
+                    
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Ingrese sus datos" HorizontalOptions="Center" TextColor="Black" FontSize="Large" Margin="0,30" FontAttributes="Bold"></Label>
+                        <Entry x:Name="txtNombre"  Placeholder="Nombre" PlaceholderColor="Gray" TextColor="black" WidthRequest="150" MaxLength="25"/>
+                        <Entry x:Name="txtApellido" Placeholder="Apellido" PlaceholderColor="Gray"  TextColor="black"  MaxLength="25"/>
+                        <Entry x:Name="txtContra"  Placeholder="Contraseña" PlaceholderColor="Gray" TextColor="black" WidthRequest="150" MaxLength="25" IsPassword="true"/>
+                        <!--<Grid>
+                            <Entry
+        Grid.Row="0"
+        Grid.Column="0"
+        x:Name="txtContra" Placeholder="Contraseña" PlaceholderColor="Gray" IsPassword="true" TextColor="black" WidthRequest="150" MaxLength="25">
+                            </Entry>
+                            <Image 
+        Grid.Row="0"
+        Grid.Column="0"
+        x:Name="passwordEye"
+        Source="show_password.png"
+        HorizontalOptions="End"
+        VerticalOptions="Center"
+        WidthRequest="30"
+        HeightRequest="30">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="PasswordIcon_Clicked" NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>-->
+                        <!--<Entry x:Name="txtAuxContra" Placeholder="Repita la contraseña" PlaceholderColor="Gray"  TextColor="black"  MaxLength="25" IsPassword="true"/>-->
+                        <Grid>
+                            <Entry
+        Grid.Row="0"
+        Grid.Column="0"
+        x:Name="txtAuxContra" Placeholder="Repita la contraseña" PlaceholderColor="Gray" IsPassword="true" TextColor="black" WidthRequest="150" MaxLength="25">
+                            </Entry>
+                            <Image 
+        Grid.Row="0"
+        Grid.Column="0"
+        x:Name="passwordEye"
+        Source="show_password.png"
+        HorizontalOptions="End"
+        VerticalOptions="Center"
+        WidthRequest="30"
+        HeightRequest="30">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="PasswordIcon_Clicked" NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+                        <Label x:Name="LabelError" TextColor="Red"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="50,50">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton  Source="flechaadelante.png" WidthRequest="60" HorizontalOptions="EndAndExpand" HeightRequest="60" Clicked="Next_Click" BackgroundColor="Transparent"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

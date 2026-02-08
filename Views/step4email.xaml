@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.step4email">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#fffafafa">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ImageButton  Source="flechaatras.png" WidthRequest="60" HorizontalOptions="Start" HeightRequest="60" Margin="30,60,0,0" Clicked="Back_Click" BackgroundColor="Transparent"/>
+                <StackLayout Grid.Row="1" Padding="50,10">
+
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Ingrese su Correo electrónico" HorizontalOptions="Center" TextColor="Black" FontSize="Large" Margin="0,30" FontAttributes="Bold"></Label>
+                        <Entry x:Name="txtEmail" Placeholder="Correo electrónico" PlaceholderColor="gray" TextColor="black" />
+                        <Label x:Name="LabelError" TextColor="Red"/>
+                        <Button x:Name="btnVerificarMail"  Text="Enviar código" BackgroundColor="LightGray" CornerRadius="20" Clicked="VerificarMail_Click" IsVisible="false"></Button>
+                        <Entry x:Name="txtCodigo" Placeholder="Código de verificación"  PlaceholderColor="gray" TextColor="black" IsVisible="false"/>
+                        <Label x:Name="LabelErrorCodigo" TextColor="Red" IsVisible="false"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="50,100">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton x:Name="btnNext"  Source="flechaadelante.png" WidthRequest="60" HorizontalOptions="EndAndExpand" HeightRequest="60" Clicked="btnNext_Clicked" BackgroundColor="Transparent" IsVisible="true"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

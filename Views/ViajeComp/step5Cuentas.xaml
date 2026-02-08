@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step5Cuentas">
+    <ContentPage.Content>
+        <ScrollView x:Name="scroll">
+            <StackLayout BackgroundColor="#fffafafa">
+                <Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0" Padding="0">
+                            <Label Text="SU VIAJE ESTÁ CONFIRMADO" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="CornflowerBlue" FontSize="Large" Margin="0,0" FontAttributes="Bold" Padding="40,70,40,0"></Label>
+                            <StackLayout Orientation="Horizontal" Padding="40,15,40,0" HorizontalOptions="Center">
+                                <Label Text="Si lee este mensaje es porque su reserva ya está en nuestro sistema" HorizontalTextAlignment="Start" FontSize="Medium"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Padding="0">
+                            <StackLayout Orientation="Vertical" Padding="40,15,40,0" HorizontalOptions="Center">
+                                <Label Text="Recuerde estar pendiente a los números ingresados. El conductor se comunicará con usted enviándole la información del vehículo para su mayor seguridad" HorizontalTextAlignment="Start" FontSize="Medium"/>
+                             </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Padding="0">
+                            <StackLayout Orientation="Vertical" Padding="40,15,40,0" HorizontalOptions="Center">
+                                <Label Text="Si no recibe la información, solicítela por Whatsapp 0995951038 - 0987537462" HorizontalTextAlignment="Start" FontSize="Medium"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Padding="40,50,40,0" HorizontalOptions="Center">
+                            <Button x:Name="btnRegresar"  Text="Regresar al menú principal" BackgroundColor="LightGray" CornerRadius="20" IsEnabled="true" Clicked="btnRegresar_Clicked"></Button>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="backgroundpt.png" Aspect="AspectFill"/>
+            <!--<BoxView Color="CornflowerBlue" Opacity="0.8"></BoxView>-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="peterlogomenu.png" WidthRequest="180" HeightRequest="180" Margin="0,65,0,0"/>
+                <StackLayout Grid.Row="1" Padding="30,70">
+                    <Entry x:Name="txtCI" Placeholder="Cédula de Identidad" PlaceholderColor="white" TextColor="White" BackgroundColor="Transparent"  MaxLength="10"/>
+                    <!--<Entry x:Name="txtContrasenia" Placeholder="Contraseña" PlaceholderColor="white" IsPassword="true" TextColor="White" />-->
+                    <Grid>
+                        <Entry
+        Grid.Row="0"
+        Grid.Column="0"
+        x:Name="txtContrasenia" Placeholder="Contraseña" PlaceholderColor="white" IsPassword="true" TextColor="White">
+                        </Entry>
+                        <Image 
+        Grid.Row="0"
+        Grid.Column="0"
+        x:Name="passwordEye"
+        Source="show_password.png"
+        HorizontalOptions="End"
+        VerticalOptions="Center"
+        WidthRequest="30"
+        HeightRequest="30">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="PasswordIcon_Clicked" NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Label x:Name="LabelError" TextColor="Red" HorizontalOptions="Center"/>
+                    <Button Text="Iniciar Sesión" BackgroundColor="White" TextColor="Black" CornerRadius="20" Clicked="IniciarSesion_Click"></Button>
+                    <StackLayout Orientation="Horizontal" Padding="-15,0,0,0" HorizontalOptions="Center">
+                        <Button Text="¿Recuperar Contraseña?" TextColor="White" BackgroundColor="Transparent" CornerRadius="20" Clicked="Recuperar_Click"></Button>
+                        <Button Text="Registrarse" BackgroundColor="Transparent" TextColor="white" CornerRadius="10" Clicked="Registrarse_Click"></Button>
+                    </StackLayout>
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

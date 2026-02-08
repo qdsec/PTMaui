@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step3Facturacion"
+             BackgroundColor="#fffafafa">
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0">
+            <StackLayout Padding="20">
+
+                <Label Text="Ayúdenos ingresando los datos para la factura de su viaje" 
+                       FontAttributes="Bold" 
+                       FontSize="Medium"
+                       Margin="0,0,0,10"/>
+
+                <Label Text="Cédula/RUC:" FontAttributes="Bold" Margin="0,15,0,0"/>
+                <Entry x:Name="txtIdentificacion" 
+                       Placeholder="Ej: 1712345678" 
+                       Keyboard="Numeric" MaxLength="13"/>
+
+                <Label Text="Nombre o razón social:" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry x:Name="txtNombre" 
+                       Placeholder="Nombre completo o empresa" />
+
+                <Label Text="Correo:" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry x:Name="txtCorreo" 
+                       Placeholder="ejemplo@correo.com" 
+                       Keyboard="Email" />
+
+                <Label Text="Telefono:" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry x:Name="txtTelefono" 
+                       Placeholder="0999999999" 
+                       Keyboard="Telephone" MaxLength="10"/>
+
+                <Label Text="Dirección:" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry x:Name="txtDireccion" 
+                       Placeholder="Calle principal y secundaria" />
+                <Grid ColumnSpacing="10"
+      Margin="0,15,0,0"
+      VerticalOptions="Center">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox x:Name="chkGuardarFacturacion"
+              VerticalOptions="Center"
+              HorizontalOptions="Start"/>
+
+                    <Label Grid.Column="1"
+           Text="Guardar información de facturación para viajes futuros"
+           VerticalOptions="Center"
+           FontSize="Small"
+           LineBreakMode="WordWrap"/>
+                </Grid>
+                <Label x:Name="LabelError" 
+                       TextColor="Red" 
+                       Margin="0,20,0,20"/>
+
+            </StackLayout>
+
+
+        </ScrollView>
+
+        <Grid Grid.Row="1" Padding="20,10">
+            <ImageButton x:Name="btnNext"  
+                         Source="flechaadelante.png" 
+                         WidthRequest="60" 
+                         HeightRequest="60"  
+                         BackgroundColor="Transparent" 
+                         Clicked="btnNext_Clicked" 
+                         HorizontalOptions="End"
+                         VerticalOptions="End"/>
+        </Grid>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.step3telefono">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#fffafafa">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ImageButton  Source="flechaatras.png" WidthRequest="60" HorizontalOptions="Start" HeightRequest="60" Margin="30,60,0,0" Clicked="Back_Click" BackgroundColor="Transparent"/>
+                <StackLayout Grid.Row="1" Padding="50,50">
+                    <Label Text="Ingrese su celular" HorizontalOptions="Center" TextColor="Black" FontSize="Large" Margin="0,30" FontAttributes="Bold"></Label>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Image  Source="banderaec.png" WidthRequest="50"  HeightRequest="50" />
+                        <!--<Label Text="+593" HorizontalOptions="Center" FontSize="Small" Margin="0,30" FontAttributes="Bold"></Label>-->
+                        <Entry x:Name="txtCelular" Placeholder="Número de Celular" PlaceholderColor="gray" TextColor="black" Keyboard="Numeric" MaxLength="10"/>
+                    </StackLayout>
+                    <Label x:Name="LabelError" TextColor="Red"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="50,100">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton  Source="flechaadelante.png" WidthRequest="60" HorizontalOptions="EndAndExpand" HeightRequest="60" Clicked="Next_Click" BackgroundColor="Transparent"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

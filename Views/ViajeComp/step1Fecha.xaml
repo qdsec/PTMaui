@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:plugin="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
+             xmlns:local="clr-namespace:TuProyecto.Converters"
+             x:Class="PeterTours.Views.ViajeComp.step1Fecha">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <!-- Converter para capitalizar solo la primera letra -->
+            <local:CapitalizeFirstLetterConverter x:Key="CapitalizeFirstLetterConverter" />
+
+            <!-- Estilos -->
+            <Style x:Key="CompactDaysLabelStyle" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="Margin" Value="0,2" />
+            </Style>
+
+            <Style x:Key="CompactDaysTitleStyle" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="13" />
+
+                <!-- Nuevos -->
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HeightRequest" Value="20" />
+                <Setter Property="LineBreakMode" Value="NoWrap" />
+            </Style>
+            <Style x:Key="ArrowButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="Padding" Value="2" />
+                <Setter Property="HeightRequest" Value="30" />
+                <Setter Property="WidthRequest" Value="30" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="TextColor" Value="Black" />
+
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <!-- Estado normal -->
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <!-- Cuando se presiona -->
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#22000000" />
+                                    <!-- gris suave -->
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView x:Name="scroll">
+            <StackLayout BackgroundColor="#fffafafa">
+                <Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0" Padding="10">
+                            <Label x:Name="lblFechave" Text="Seleccione la fecha de su viaje" HorizontalOptions="Center" TextColor="Black" FontSize="Medium" Margin="0,0" FontAttributes="Bold"></Label>
+
+                            <StackLayout Orientation="Horizontal" Padding="10,0,10,0">
+                                <plugin:Calendar
+    x:Name="cvFecha"
+    SelectedDate="{Binding SelectedDate}"
+    VerticalOptions="Start"
+    HorizontalOptions="FillAndExpand"
+    Padding="5,0"
+    DayViewSize="32"
+    DayViewCornerRadius="4"
+    HeaderSectionVisible="True"
+    DaysTitleMaximumLength="ThreeChars"
+    SelectedDayBackgroundColor="#2196F3"
+    SelectedDayTextColor="White"
+    TodayOutlineColor="#2196F3"
+    TodayTextColor="#2196F3"
+    DaysLabelStyle="{StaticResource CompactDaysLabelStyle}"
+    DaysTitleLabelStyle="{StaticResource CompactDaysTitleStyle}"
+>
+
+                                    <plugin:Calendar.HeaderSectionTemplate>
+                                        <DataTemplate>
+                                            <HorizontalStackLayout
+            Padding="0"
+            Spacing="5"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+                                                <!-- Flecha izquierda -->
+                                                <Button
+                Style="{StaticResource ArrowButtonStyle}"
+                Text="◄"
+                Command="{Binding PrevLayoutUnitCommand}" />
+
+                                                <!-- Mes + Año centrado -->
+                                                <Label
+                FontSize="Medium"
+                FontAttributes="Bold"
+                TextColor="Black"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center">
+
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="{Binding LayoutUnitText}" />
+                                                            <Span Text=", " />
+                                                            <Span Text="{Binding LocalizedYear}" />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+
+                                                <!-- Flecha derecha -->
+                                                <Button
+                Style="{StaticResource ArrowButtonStyle}"
+                Text="►"
+                Command="{Binding NextLayoutUnitCommand}" />
+
+                                            </HorizontalStackLayout>
+                                        </DataTemplate>
+                                    </plugin:Calendar.HeaderSectionTemplate>
+
+
+
+                                </plugin:Calendar>
+
+
+
+                            </StackLayout>
+
+                        </StackLayout>
+                        <StackLayout x:Name="pnlHora" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="10,0,10,0" IsVisible="false" >
+
+                            <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" >
+                                <Label Text="Ruta: " FontSize="Large" TextColor="#fc940c" />
+                                <Label x:Name="lblRuta" Text="" FontSize="Large" TextColor="Black"/>
+                            </StackLayout>
+                            <Label Text="Elija la hora" HorizontalOptions="Center" TextColor="Black" FontSize="Medium" Margin="0,0" FontAttributes="Bold"></Label>
+                            <StackLayout Padding="70,0,70,0">
+                                <Picker x:Name="piHoras"  Title="Seleccionar" HorizontalTextAlignment="Center" SelectedIndexChanged="piHoras_SelectedIndexChanged"  />
+                                <Grid HorizontalOptions="Center" WidthRequest="60">
+                                    <TimePicker x:Name="timePicker"
+                                                Format="HH:mm"
+                                                Time="00:00:00"
+                                                PropertyChanged="timePicker_PropertyChanged"/>
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout x:Name="pnlViajes">
+                                <Button x:Name="btnSolicitar"  Text="Solicitar nuevo horario" BackgroundColor="LightGray" HeightRequest="40" CornerRadius="20" Clicked="btnComWpp_Clicked" IsVisible="false"></Button>
+                                <Label Text="¿Cuántos pasajeros viajan?" HorizontalOptions="Center" TextColor="Black" FontSize="Medium" Margin="0,0" FontAttributes="Bold"></Label>
+                                <StackLayout Padding="70,0,70,0">
+                                    <Picker x:Name="piOcupantes"  Title="Seleccionar" HorizontalTextAlignment="Center" SelectedIndexChanged="piOcupantes_SelectedIndexChanged" />
+                                </StackLayout>
+
+                            </StackLayout>
+                            <StackLayout x:Name="pnlValorEnc" Padding="70,0,70,0" IsVisible="false" HorizontalOptions="Center">
+                                <Label Text="$ Valor del contenido" HorizontalOptions="Center" TextColor="Black" FontSize="Medium" Margin="0,0" FontAttributes="Bold"></Label>
+                                <Entry x:Name="txtValorEnc"
+                                               Placeholder="Ingrese el valor"
+                                               PlaceholderColor="Gray"
+                                               BackgroundColor="#fffafafa"
+                                               TextColor="black"
+                                               Keyboard="Numeric"
+                                               WidthRequest="65"
+                                               MaxLength="5"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                            <Label x:Name="LabelError" TextColor="Red" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout Padding="40,0,40,0" Grid.Row="2">
+                            <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
+                                <ImageButton x:Name="btnNext"  Source="flechaadelante.png" WidthRequest="60" HeightRequest="60" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" IsVisible="false" Clicked="btnNext_Clicked"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step4Confirmar">
+    <ContentPage.Content>
+        <ScrollView x:Name="scroll">
+            <StackLayout BackgroundColor="#fffafafa">
+                <Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0" Padding="10,0,10,0">
+                            <Label x:Name="lblTitulo" Text="Detalle del viaje" HorizontalOptions="Center" TextColor="Black" FontSize="Large" Margin="0,0" FontAttributes="Bold" Padding="40,30,40,0"/>
+
+                            <!-- Fecha y hora -->
+                            <StackLayout Orientation="Horizontal" Padding="10,20,10,0">
+                                <Label Text="Fecha: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                <Label x:Name="txtFecha" Text="" FontSize="Medium"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                <Label Text="Hora: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                <Label x:Name="txtHora" Text="" FontSize="Medium"/>
+                            </StackLayout>
+
+                            <!-- Panel de Viajes -->
+                            <StackLayout x:Name="pnlViajes" Orientation="Vertical" >
+                                <StackLayout Orientation="Horizontal" Padding="10,5,10,0" IsVisible="false">
+                                    <Label Text="Nombres: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtNombres" Text="" FontSize="Medium"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Padding="10,5,10,0" IsVisible="false">
+                                    <Label Text="Nº de teléfono: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtTelf" Text="" FontSize="Medium"/>
+                                </StackLayout>
+                                <!-- Ubicaciones (mantener en ambos paneles) -->
+                                <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                    <Label Text="Ubicación de retiro: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtRetiro" Text="" FontSize="Medium"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                    <Label Text="Ubicación de llegada: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtLlegada" Text="" FontSize="Medium"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                    <Label Text="Tiempo aproximado de llegada: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtTiempoAproxLlegada" Text="" FontSize="Medium"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                    <Label Text="Requerimientos: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtRequerimiento" Text="" FontSize="Medium"/>
+                                </StackLayout>
+                                <!-- Extra por Parrilla solo aquí -->
+                                <StackLayout x:Name="pnlParrilla" Orientation="Horizontal" Padding="10,5,10,0" IsVisible="false">
+                                    <Label Text="Extra por Parrilla: $" FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtExtraParrilla" Text="10" FontSize="Medium"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!-- Panel de Encomienda -->
+                            <StackLayout x:Name="pnlEncomienda" Orientation="Vertical" Padding="10,5,10,0" Spacing="5">
+
+                                <!-- Ciudad de retiro -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Ciudad de retiro: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtRetiroEnc" Text="" FontSize="Medium"/>
+                                </StackLayout>
+
+                                <!-- Recibimos de: -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Recibimos de: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtNombresEnc" Text="" FontSize="Medium"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Teléfono: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtTelfEnc" Text="" FontSize="Medium"/>
+                                </StackLayout>
+
+                                <!-- Ciudad de destino -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Ciudad de destino: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtLlegadaEnc" Text="" FontSize="Medium"/>
+                                </StackLayout>
+
+                                <!-- Entregamos a: -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Entregamos a: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtReceptorEnc" Text="" FontSize="Medium"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Teléfono: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtTelfReceptorEnc" Text="" FontSize="Medium"/>
+                                </StackLayout>
+
+                                <!-- Gestión de retiro o entrega -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Gestión de retiro o entrega: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label x:Name="txtRequerimientoEnc" Text="" FontSize="Medium"/>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <!-- Precio y pasajeros -->
+                            <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                <Label Text="Precio: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                <Label x:Name="txtPrecio" Text="" FontSize="Medium"/>
+                            </StackLayout>
+                            <StackLayout x:Name="pnlPasajeros" Orientation="Vertical" Padding="10,5,10,0">
+                                <Label Text="Pasajeros: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                <Label x:Name="txtPasajeros" Text="" FontSize="Medium"/>
+                            </StackLayout>
+
+                            <!-- Total y cupón -->
+                            <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                <Label Text="Total: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                                <Label x:Name="txtTotal" Text="" FontSize="Medium"/>
+                                <Label x:Name="txtCuponAplicado" Text="" FontSize="20" TextColor="Black" FontAttributes="Bold,Italic" Padding="20,0,0,0"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                                <Button x:Name="btnCupon"  Text="Aplicar" BackgroundColor="#fc940c" TextColor="White" CornerRadius="1" Clicked="btnCupon_Clicked" IsEnabled="True"/>
+                                <Entry x:Name="txtCupon" Placeholder="Cupón de Descuento" PlaceholderColor="Gray"  BackgroundColor="#fffafafa" TextColor="black"  WidthRequest="200" MaxLength="10"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="1" Padding="40,10,40,0">
+
+                            <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center" >
+
+                                <!--<Label Grid.Column="0"
+       x:Name="lblAgendar"
+       LineBreakMode="WordWrap"
+       HorizontalOptions="FillAndExpand"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Center"
+       TextColor="#fc940c"
+       FontSize="Medium">
+
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Acepto los términos y condiciones"
+                  TextDecorations="Underline">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer 
+                        Command="{Binding TapCommand}"
+                        CommandParameter="{Binding DynamicUrl}" />
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+
+                                </Label>-->
+                                <Label Grid.Column="0"
+       x:Name="lblAgendar"
+       LineBreakMode="WordWrap"
+       HorizontalOptions="FillAndExpand"
+       HorizontalTextAlignment="Center"
+       VerticalOptions="Center"
+       FontSize="Medium">
+
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer 
+            Command="{Binding TapCommand}"
+            CommandParameter="{Binding DynamicUrl}" />
+                                    </Label.GestureRecognizers>
+
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Acepto los términos y condiciones"
+                  TextDecorations="Underline"
+                  TextColor="#fc940c"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+
+
+                                <CheckBox Grid.Column="1"
+                  x:Name="chbConfirmar"
+                  IsChecked="False"
+                  VerticalOptions="Center"
+                  Margin="10,0,0,0"
+                  CheckedChanged="chbConfirmar_CheckedChanged"/>
+                            </Grid>
+
+
+                            <Button x:Name="btnConfirmar"
+            Text="Confirmar Viaje"
+            BackgroundColor="LightGray"
+            CornerRadius="20"
+            Clicked="btnConfirmar_Clicked"
+            IsEnabled="False"/>
+                        </StackLayout>
+
+                    </Grid>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

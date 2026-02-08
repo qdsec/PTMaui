@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.qds.petertours" android:installLocation="auto" android:versionCode="43" android:versionName="1.43">
+	<!-- SDK -->
+	<!-- Permisos -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<!-- Requisitos de hardware -->
+	<uses-feature android:name="android.hardware.camera" android:required="true" />
+	<application android:theme="@style/Maui.SplashTheme" android:allowBackup="true" android:icon="@mipmap/logotipo" android:supportsRtl="true" android:usesCleartextTraffic="true" android:label="PeterTours">
+		<!-- API Key de Google Maps -->
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB2AYgv8OhthZJUZcu35B6FqfjJt16l-aU" />
+		<!-- Librería legacy de HTTP (opcional, solo si la necesitas) -->
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+		<!-- Servicio de Firebase Messaging -->
+		<service android:name="crc6494e14b9856016c30.PNFirebaseMessagingService" android:exported="false">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+	</application>
+</manifest>

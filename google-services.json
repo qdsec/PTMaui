@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "885588180448",
+    "project_id": "toursapp-6696d",
+    "storage_bucket": "toursapp-6696d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885588180448:android:deb12678f7ef92e40fff85",
+        "android_client_info": {
+          "package_name": "com.qds.petertours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885588180448-cdjtc4i0k5tf57f9b1nntjgca9u6t5ms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqaR72kfr65udJJlgC0qM4SwX6q1utZpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885588180448-cdjtc4i0k5tf57f9b1nntjgca9u6t5ms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

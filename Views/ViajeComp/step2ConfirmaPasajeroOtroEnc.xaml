@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.step2ConfirmaPasajeroOtroEnc">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="#fffafafa">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <!-- Scrollable -->
+                <RowDefinition Height="Auto"/>
+                <!-- Botón -->
+            </Grid.RowDefinitions>
+
+            <ScrollView Grid.Row="0">
+                <StackLayout x:Name="pnlContenido" Padding="40,30,40,30" Spacing="20">
+                    <!-- Sección dinámica de pasajeros -->
+                    <StackLayout x:Name="pnlPasajeros" Spacing="15">
+                        <Label x:Name="lblDatos" Text="Ingrese los datos de quien viaja" HorizontalOptions="Center" TextColor="Black" FontSize="Medium" Margin="0,0" HorizontalTextAlignment="Center"  FontAttributes="Bold"></Label>
+                    </StackLayout>
+
+                    <Label x:Name="LabelError" TextColor="Red"/>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Botón fijo abajo -->
+            <StackLayout Grid.Row="1" Padding="40,0,40,40">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton x:Name="btnNext"
+                         Source="flechaadelante.png"
+                         WidthRequest="60"
+                         HorizontalOptions="EndAndExpand"
+                         HeightRequest="60"
+                         BackgroundColor="Transparent"
+                         Clicked="btnNext_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

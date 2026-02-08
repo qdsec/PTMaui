@@ -1,0 +1,85 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeterTours.Views.ViajeComp.viajeSeleccionado"
+             x:Name="PageRoot">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- FILTRO -->
+        <Grid Grid.Row="0"
+              Padding="10"
+              ColumnDefinitions="*,*">
+
+            <Picker x:Name="pkMes"
+                    Title="Mes"
+                    ItemsSource="{Binding Meses}"
+                    SelectedIndexChanged="OnFiltroChanged"/>
+
+            <Picker x:Name="pkAnio"
+                    Grid.Column="1"
+                    Title="Año"
+                    ItemsSource="{Binding Anios}"
+                    SelectedIndexChanged="OnFiltroChanged"/>
+        </Grid>
+
+        <!-- LISTADO -->
+        <CollectionView
+            Grid.Row="1"
+            ItemsSource="{Binding Viajes}"
+            SelectionMode="None">
+
+            <CollectionView.Header>
+                <Label Text="Mis viajes"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,10"/>
+            </CollectionView.Header>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="10"
+                           Padding="12"
+                           CornerRadius="12"
+                           HasShadow="True"
+                           BorderColor="#E0E0E0">
+
+                        <StackLayout Spacing="8">
+                            <Label Text="{Binding cit_tipo_pal}" FontSize="Large" FontAttributes="Bold"/>
+                            <Label Text="{Binding cit_fecha, StringFormat='{0:dddd dd MMM yyyy}'}"
+                                   FontAttributes="Bold"
+                                   TextColor="#fc940c"/>
+
+                            <Label Text="{Binding cit_hora}" FontSize="Small"/>
+                            
+
+                            <Label Text="{Binding cit_origen}"  FontAttributes="Bold"/>
+                            <Label Text="→" HorizontalOptions="Center"/>
+                            <Label Text="{Binding cit_destino}" FontAttributes="Bold"/>
+
+                            <Label Text="{Binding cit_cantidad_pasajeros, StringFormat='Pasajeros: {0}'}"
+                                   FontSize="Small"/>
+
+                            <Label Text="{Binding cit_precio, StringFormat='Total: ${0:F2}'}"
+                                   FontAttributes="Bold"
+                                   TextColor="Green"/>
+
+                            <!-- BOTÓN -->
+                            <Button
+                                Text="Ver detalles"
+                                BackgroundColor="#fc940c"
+                                TextColor="White"
+                                CornerRadius="20"
+                                FontAttributes="Bold"
+                                Command="{Binding BindingContext.VerDetalleCommand, Source={x:Reference PageRoot}}"
+                                CommandParameter="{Binding .}" />
+
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+</ContentPage>

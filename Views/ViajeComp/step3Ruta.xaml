@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             x:Class="PeterTours.Views.ViajeComp.step3Ruta">
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="#fffafafa"
+              RowDefinitions="Auto,Auto,*,Auto">
+
+            <!-- ================= DIRECCIÓN ================= -->
+            <StackLayout Grid.Row="0" Padding="30,5,30,0" Spacing="0">
+                <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Entry x:Name="txtDireccion"
+                           Placeholder="Dirección de Retiro"
+                           TextChanged="txtDireccion_TextChanged"
+                           Focused="txtDireccion_Focused"
+                           HorizontalOptions="FillAndExpand"/>
+                    <Button x:Name="btnDireccion"
+                            Text="Buscar"
+                            WidthRequest="80"
+                            IsVisible="false"
+                            Clicked="btnDireccion_Clicked"/>
+                </StackLayout>
+
+                <Frame IsVisible="{Binding Source={x:Reference lvSugerencias}, Path=IsVisible}"
+                       Padding="0"
+                       CornerRadius="6"
+                       Margin="0,2,0,0"
+                       HasShadow="True"
+                       BackgroundColor="White">
+                    <ListView x:Name="lvSugerencias"
+                              HeightRequest="150"
+                              ItemSelected="lvSugerencias_ItemSelected"/>
+                </Frame>
+            </StackLayout>
+
+            <!-- ================= MAPA ================= -->
+            <StackLayout Grid.Row="1" Padding="30,10,30,0">
+                <maps:Map x:Name="mapRutas"
+                          HeightRequest="300"
+                          MapType="Street"
+                          IsShowingUser="True"
+                          MapClicked="mapRutas_MapClicked"/>
+            </StackLayout>
+
+            <!-- ================= CONTENIDO CON SCROLL ================= -->
+            <ScrollView Grid.Row="2"
+                        Orientation="Vertical"
+                        HorizontalOptions="Fill">
+
+                <StackLayout Padding="20,5" Spacing="8">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="Ruta:" FontSize="Large" TextColor="#fc940c"/>
+                        <Label x:Name="lblRuta" FontSize="Large" TextColor="Black"/>
+                    </StackLayout>
+
+                    <Button x:Name="btnUbiDestino"
+                            Text="Volver a seleccionar"
+                            HeightRequest="40"
+                            WidthRequest="220"
+                            CornerRadius="15"
+                            BackgroundColor="#fc940c"
+                            HorizontalOptions="Center"
+                            IsEnabled="False"
+                            Clicked="btnUbiDestino_Clicked"/>
+
+                    <Grid ColumnSpacing="10" Padding="0,8,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="btnUbiActual"
+                                Grid.Column="0"
+                                Text="Mi ubicación"
+                                HeightRequest="40"
+                                CornerRadius="15"
+                                BackgroundColor="#fc940c"
+                                Clicked="btnUbiActual_Clicked"/>
+
+                        <Button x:Name="btnConfirmarPin"
+                                Grid.Column="1"
+                                Text="Confirmar"
+                                HeightRequest="40"
+                                CornerRadius="15"
+                                BackgroundColor="#4CAF50"
+                                TextColor="White"
+                                IsVisible="false"
+                                Clicked="btnConfirmarPin_Clicked"/>
+                    </Grid>
+
+                    <StackLayout x:Name="pnlPrecio"
+                                 Orientation="Horizontal"
+                                 HorizontalOptions="Center"
+                                 Spacing="5">
+                        <Label Text="Precio" TextColor="#fc940c"/>
+                        <Label x:Name="lblPrecio"/>
+                    </StackLayout>
+
+                    <StackLayout x:Name="pnlResumen" IsVisible="false" Padding="10,5">
+                        <Label Text="Resumen de Pasajeros"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"/>
+                        <StackLayout x:Name="listaResumen"/>
+                        <Label x:Name="lblTotal"
+                               FontSize="Large"
+                               TextColor="#fc940c"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+
+            <!-- ================= BOTÓN FIJO ================= -->
+            <Grid Grid.Row="3" Padding="0,10,20,20">
+                <ImageButton x:Name="btnNext"
+                             Source="flechaadelante.png"
+                             WidthRequest="60"
+                             HeightRequest="60"
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center"
+                             IsVisible="false"
+                             Clicked="btnNext_Clicked"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label x:Name="LabelError" TextColor="Red" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
