@@ -39,7 +39,7 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android|AnyCPU'">
 		<ApplicationId>com.qds.PeterTours</ApplicationId>
-		<ApplicationDisplayVersion>4.71</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>4.72</ApplicationDisplayVersion>
 		<ApplicationVersion>4</ApplicationVersion>
 		<AndroidUseAapt2>True</AndroidUseAapt2>
 		<AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
@@ -48,14 +48,14 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-ios|AnyCPU'">
 		<ApplicationId>com.qds.PeterTours</ApplicationId>
-		<ApplicationDisplayVersion>4.71</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>4.72</ApplicationDisplayVersion>
 		<ApplicationVersion>4</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android|AnyCPU'">
 		<ApplicationId>com.qds.PeterTours</ApplicationId>
 		<AndroidPackageFormat>apk</AndroidPackageFormat>
-		<ApplicationDisplayVersion>4.71</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>4.72</ApplicationDisplayVersion>
 		<ApplicationVersion>4</ApplicationVersion>
 		<AndroidUseAapt2>True</AndroidUseAapt2>
 		<AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
@@ -63,7 +63,7 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-ios|AnyCPU'">
 		<ApplicationId>com.qds.PeterTours</ApplicationId>
-		<ApplicationDisplayVersion>4.71</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>4.72</ApplicationDisplayVersion>
 		<ApplicationVersion>4</ApplicationVersion>
 	</PropertyGroup>
 

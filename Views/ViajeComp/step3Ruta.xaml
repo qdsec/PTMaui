@@ -109,12 +109,26 @@
                                TextColor="#fc940c"
                                HorizontalOptions="Center"/>
                     </StackLayout>
+                    <!--<StackLayout x:Name="pnlDescuentoGrupo"
+                                             Orientation="Horizontal"
+                                             IsVisible="False">
+                        <Label Text="Descuento por viaje grupal:"
+                                           FontSize="Small"
+                                           TextColor="Green"
+                                           FontAttributes="Italic"/>
+
+                        <Label x:Name="txtDescuentoGrupo"
+                                           FontSize="Small"
+                                           TextColor="Green"
+                                           FontAttributes="Bold"
+                                           Margin="5,0,0,0"/>
+                    </StackLayout>-->
 
                 </StackLayout>
             </ScrollView>
 
             <!-- ================= BOTÓN FIJO ================= -->
-            <Grid Grid.Row="3" Padding="0,10,20,20">
+            <!--<Grid Grid.Row="3" Padding="0,10,20,20">
                 <ImageButton x:Name="btnNext"
                              Source="flechaadelante.png"
                              WidthRequest="60"
@@ -127,8 +141,76 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Label x:Name="LabelError" TextColor="Red" HorizontalOptions="Center"/>
                 </StackLayout>
-            </Grid>
+            </Grid>-->
+            <Grid Grid.Row="3"
+      Padding="0,10,20,20">
 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Contenido centrado -->
+                <VerticalStackLayout Grid.Column="0"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+
+                    <!-- Panel de descuento -->
+                    <StackLayout x:Name="pnlDescuentoGrupo"
+                     Orientation="Vertical"
+                     HorizontalOptions="Center"
+                     IsVisible="False"
+                     Spacing="2">
+
+                        <!-- Primera línea -->
+                        <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+
+                            <Label Text="Descuento por viaje grupal:"
+                       FontSize="Small"
+                       TextColor="Green"
+                       FontAttributes="Italic"
+                       VerticalTextAlignment="Center"/>
+
+                            <Label x:Name="txtDescuentoGrupo"
+                       Margin="5,0,0,0"
+                       FontSize="Small"
+                       TextColor="Green"
+                       FontAttributes="Bold"
+                       VerticalTextAlignment="Center"/>
+
+                        </StackLayout>
+
+                        <!-- Segunda línea -->
+                        <Label x:Name="txtValorOriginal"
+                   FontSize="Small"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <Label x:Name="LabelError"
+               TextColor="Red"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="Center"
+               VerticalTextAlignment="Center"/>
+
+                </VerticalStackLayout>
+
+                <!-- Botón a la derecha -->
+                <ImageButton Grid.Column="1"
+                 x:Name="btnNext"
+                 Source="flechaadelante.png"
+                 WidthRequest="60"
+                 HeightRequest="60"
+                 BackgroundColor="Transparent"
+                 HorizontalOptions="End"
+                 VerticalOptions="Center"
+                 IsVisible="False"
+                 Clicked="btnNext_Clicked"/>
+
+            </Grid>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

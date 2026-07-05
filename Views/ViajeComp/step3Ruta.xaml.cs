@@ -654,6 +654,24 @@ namespace PeterTours.Views.ViajeComp
                         // ➝ Sumatoria de todos los precios
                         foreach (var p in pasajeros)
                             total += p.Precio;
+
+                        if (pasajeros.Count > 1)
+                        {
+                            descuentoMasUno = true;
+                        }
+
+                        if (descuentoMasUno)
+                        {
+                            txtValorOriginal.Text = "Valor original: $" + total;
+                            total *= 0.90m; // Aplica 10% de descuento
+
+                            pnlDescuentoGrupo.IsVisible = true;
+                            txtDescuentoGrupo.Text = "10%";
+                        }
+                        else
+                        {
+                            pnlDescuentoGrupo.IsVisible = false;
+                        }
                     }
                     else
                     {

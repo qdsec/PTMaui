@@ -81,7 +81,7 @@ namespace PeterTours.Views.ViajeComp
 
                 if (step3Ruta.descuentoMasUno)
                 {
-                    total *= 0.90m; // Aplica 10% de descuento
+                    //total *= 0.90m; // Aplica 10% de descuento
 
                     pnlDescuentoGrupo.IsVisible = true;
                     txtDescuentoGrupo.Text = "10%";
