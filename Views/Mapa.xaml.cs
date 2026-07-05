@@ -94,31 +94,43 @@ namespace PeterTours.Views
         private async void btnComWpp_Clicked(object sender, EventArgs e)
         {
             LoadingService.Show("Cargando");
+
             try
             {
-                var message = "Tengo una consulta acerca de los viajes";
-                var phone = "+593995951038";
+                var phone = "+593987537462"; 
 
-                // Formato URL para WhatsApp
+                var message = @"👋 Hola, vengo directamente desde la app y necesito ayuda. Mi nombre es: ";
+
                 var url = $"https://wa.me/{phone}?text={Uri.EscapeDataString(message)}";
 
                 await Launcher.OpenAsync(url);
-                //if (await Launcher.CanOpenAsync(url))
-                //{
-                //    await Launcher.OpenAsync(url);
-                //}
-                //else
-                //{
-                //    await DisplayAlert("Error", "No se pudo abrir WhatsApp. Asegúrate de que esté instalado en el dispositivo.", "Cerrar");
-                //}
+
+                // Si deseas validar antes de abrir:
+                // if (await Launcher.CanOpenAsync(url))
+                // {
+                //     await Launcher.OpenAsync(url);
+                // }
+                // else
+                // {
+                //     await DisplayAlert(
+                //         "Error",
+                //         "No se pudo abrir WhatsApp. Asegúrate de que esté instalado en el dispositivo.",
+                //         "Cerrar");
+                // }
             }
             catch (FeatureNotSupportedException ex)
             {
-                await DisplayAlert("No soportado", "Tu dispositivo no soporta abrir esta app: " + ex.Message, "Cerrar");
+                await DisplayAlert(
+                    "No soportado",
+                    $"Tu dispositivo no soporta abrir esta aplicación: {ex.Message}",
+                    "Cerrar");
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Error inesperado", $"Error al intentar abrir WhatsApp: {ex.Message}", "Cerrar");
+                await DisplayAlert(
+                    "Error inesperado",
+                    $"Error al intentar abrir WhatsApp: {ex.Message}",
+                    "Cerrar");
             }
             finally
             {

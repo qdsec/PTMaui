@@ -40,6 +40,7 @@ namespace PeterTours.Views.ViajeComp
         public static double latEspecial = 0;
         public static double lonEspecial = 0;
         public static bool zonasEsp = false;
+        public static bool descuentoMasUno = false;
         double res = 0;
         public static List<libreriaDatos.GeoCoordinateID> listaCoordenadas = new List<libreriaDatos.GeoCoordinateID>();
         public static List<libreriaDatos.CatalogoLugaresOutput> listaLugares = new List<libreriaDatos.CatalogoLugaresOutput>();
@@ -1342,6 +1343,11 @@ namespace PeterTours.Views.ViajeComp
             {
                 if (lblPrecio.Text != "0")
                 {
+
+                    if (pasajeros.Count > 1)
+                    {
+                        descuentoMasUno = true;
+                    }
                     LabelError.Text = "";
                     if (tipoTrifa != "3")
                     {
@@ -1733,7 +1739,9 @@ namespace PeterTours.Views.ViajeComp
                     }
                     else
                     {
-                        return resultado.plc_tarifa;
+                        decimal valor = resultado.plc_tarifa;
+
+                        return valor;
                     }
                 }
             }

@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\petertours.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:petertours.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\platforms\\ios\\info.plist||{4B819833-C3E7-40A8-B4AF-4F7F5E6B913F}",
       "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:platforms\\ios\\info.plist||{4B819833-C3E7-40A8-B4AF-4F7F5E6B913F}"
     },
@@ -15,20 +11,36 @@
       "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step4confirmar.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step4confirmar.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step1fecha.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step1fecha.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\petertours.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:petertours.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step4confirmar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step4confirmar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step3ruta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step3ruta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step1fecha.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step1fecha.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\mapa.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\mapa.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step3ruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step3ruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step1fecha.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step1fecha.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\utils\\libreriadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step0sentido.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step1fecha.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step1fecha.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\mapa.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\mapa.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step0sentido.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step0sentido.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\viajecomp\\step3ruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\viajecomp\\step3ruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\loadingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -272,10 +272,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\step1nombre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\step1nombre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|c:\\users\\usuario\\desktop\\petertours git\\maui\\petertours\\maui\\petertours\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7307B6-F096-400E-9F2D-EBC74071E063}|PeterTours.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -285,7 +281,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -313,68 +309,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-02-08T00:10:25.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "step3Ruta.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step3Ruta.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\ViajeComp\\step3Ruta.xaml.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step3Ruta.xaml.cs",
-              "RelativeToolTip": "Views\\ViajeComp\\step3Ruta.xaml.cs",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAhwAABAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T03:49:37.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PeterTours",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\PeterTours.csproj",
-              "RelativeDocumentMoniker": "PeterTours.csproj",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\PeterTours.csproj",
-              "RelativeToolTip": "PeterTours.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-07T05:25:14.588Z",
-              "EditorCaption": ""
+              "Title": "Info.plist",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\iOS\\Info.plist",
+              "RelativeDocumentMoniker": "Platforms\\iOS\\Info.plist",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\iOS\\Info.plist",
+              "RelativeToolTip": "Platforms\\iOS\\Info.plist",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-04T22:26:15.902Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
+              "Title": "step4Confirmar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step4Confirmar.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ViajeComp\\step4Confirmar.xaml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step4Confirmar.xaml.cs",
+              "RelativeToolTip": "Views\\ViajeComp\\step4Confirmar.xaml.cs",
+              "ViewState": "AgIAAJcCAAAAAAAAAAAhwKwCAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T02:18:50.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "step1Fecha.xaml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step1Fecha.xaml",
               "RelativeDocumentMoniker": "Views\\ViajeComp\\step1Fecha.xaml",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step1Fecha.xaml",
               "RelativeToolTip": "Views\\ViajeComp\\step1Fecha.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-23T04:49:24.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PeterTours.csproj",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\PeterTours.csproj",
-              "RelativeDocumentMoniker": "PeterTours.csproj",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\PeterTours.csproj",
-              "RelativeToolTip": "PeterTours.csproj",
-              "ViewState": "AgIAACoAAAAAAAAAAAApwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-23T04:53:12.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "step0Sentido.xaml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step0Sentido.xaml",
               "RelativeDocumentMoniker": "Views\\ViajeComp\\step0Sentido.xaml",
@@ -386,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "MainActivity.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\Android\\MainActivity.cs",
               "RelativeDocumentMoniker": "Platforms\\Android\\MainActivity.cs",
@@ -398,55 +368,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Mapa.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\Mapa.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Mapa.xaml.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\Mapa.xaml.cs",
               "RelativeToolTip": "Views\\Mapa.xaml.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAUwOwAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAUwGUAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T20:18:20.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\LoginPage.xaml.cs",
               "RelativeToolTip": "Views\\LoginPage.xaml.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAlwGEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAlwFkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T03:27:30.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T03:27:30.825Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Info.plist",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\iOS\\Info.plist",
-              "RelativeDocumentMoniker": "Platforms\\iOS\\Info.plist",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\iOS\\Info.plist",
-              "RelativeToolTip": "Platforms\\iOS\\Info.plist",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-08T00:10:31.5Z"
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-02-08T00:10:25.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
+              "Title": "step3Ruta.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step3Ruta.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ViajeComp\\step3Ruta.xaml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step3Ruta.xaml.cs",
+              "RelativeToolTip": "Views\\ViajeComp\\step3Ruta.xaml.cs",
+              "ViewState": "AgIAADAFAAAAAAAAAAAMwEQFAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T03:49:37.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "step4Confirmar.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step4Confirmar.xaml",
+              "RelativeDocumentMoniker": "Views\\ViajeComp\\step4Confirmar.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step4Confirmar.xaml",
+              "RelativeToolTip": "Views\\ViajeComp\\step4Confirmar.xaml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAmwJUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-03T02:16:54.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "step3Ruta.xaml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step3Ruta.xaml",
               "RelativeDocumentMoniker": "Views\\ViajeComp\\step3Ruta.xaml",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step3Ruta.xaml",
               "RelativeToolTip": "Views\\ViajeComp\\step3Ruta.xaml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAWwDoAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAWwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-24T00:52:39.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "step1Fecha.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step1Fecha.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ViajeComp\\step1Fecha.xaml.cs",
@@ -454,12 +448,11 @@
               "RelativeToolTip": "Views\\ViajeComp\\step1Fecha.xaml.cs",
               "ViewState": "AgIAADoDAAAAAAAAAAAhwEUDAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T20:43:32.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T20:43:32.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "libreriaDatos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Utils\\libreriaDatos.cs",
               "RelativeDocumentMoniker": "Utils\\libreriaDatos.cs",
@@ -467,12 +460,11 @@
               "RelativeToolTip": "Utils\\libreriaDatos.cs",
               "ViewState": "AgIAACcBAAAAAAAAAIA6wI0BAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T20:15:06.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T20:15:06.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "step0Sentido.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\ViajeComp\\step0Sentido.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ViajeComp\\step0Sentido.xaml.cs",
@@ -480,8 +472,7 @@
               "RelativeToolTip": "Views\\ViajeComp\\step0Sentido.xaml.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAYwBAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T20:43:18.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T20:43:18.267Z"
             },
             {
               "$type": "Document",
@@ -1094,18 +1085,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T20:42:27.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PeterTours Git\\MAUI\\PeterTours\\MAUI\\PeterTours\\Views\\MainPage.xaml.cs",
-              "RelativeToolTip": "Views\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T20:18:15.159Z"
             },
             {
               "$type": "Document",

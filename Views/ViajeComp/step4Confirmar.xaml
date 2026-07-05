@@ -114,10 +114,54 @@
                             </StackLayout>
 
                             <!-- Total y cupón -->
-                            <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
+                            <!--<StackLayout Orientation="Horizontal" Padding="10,5,10,0">
                                 <Label Text="Total: " FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
                                 <Label x:Name="txtTotal" Text="" FontSize="Medium"/>
                                 <Label x:Name="txtCuponAplicado" Text="" FontSize="20" TextColor="Black" FontAttributes="Bold,Italic" Padding="20,0,0,0"/>
+                            </StackLayout>-->
+                            <StackLayout Padding="10,5,10,0" Spacing="5">
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Total: "
+                                           FontSize="Medium"
+                                           FontAttributes="Bold"
+                                           TextColor="Black"/>
+
+                                    <Label x:Name="txtTotal"
+                                           FontSize="Medium"
+                                           TextColor="Black"/>
+                                </StackLayout>
+
+                                <StackLayout x:Name="pnlDescuentoGrupo"
+                                             Orientation="Horizontal"
+                                             IsVisible="False">
+                                    <Label Text="Descuento por viaje grupal:"
+                                           FontSize="Small"
+                                           TextColor="Green"
+                                           FontAttributes="Italic"/>
+
+                                    <Label x:Name="txtDescuentoGrupo"
+                                           FontSize="Small"
+                                           TextColor="Green"
+                                           FontAttributes="Bold"
+                                           Margin="5,0,0,0"/>
+                                </StackLayout>
+
+                                <StackLayout x:Name="pnlCupon"
+                                             Orientation="Horizontal"
+                                             IsVisible="False">
+                                    <Label Text="Cupón aplicado:"
+                                           FontSize="Small"
+                                           TextColor="Green"
+                                           FontAttributes="Italic"/>
+
+                                    <Label x:Name="txtCuponAplicado"
+                                           FontSize="Small"
+                                           TextColor="Green"
+                                           FontAttributes="Bold"
+                                           Margin="5,0,0,0"/>
+                                </StackLayout>
+
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" Padding="10,5,10,0">
                                 <Button x:Name="btnCupon"  Text="Aplicar" BackgroundColor="#fc940c" TextColor="White" CornerRadius="1" Clicked="btnCupon_Clicked" IsEnabled="True"/>

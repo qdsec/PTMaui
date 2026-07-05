@@ -62,9 +62,37 @@ namespace PeterTours.Views.ViajeComp
                     tiempo = $"{horas:D2}h{mins:D2}";
                 }
 
+                //txtTiempoAproxLlegada.Text = tiempoEstimadoViaje(tiempo);
+                //txtPrecio.Text = (precioUnitario).ToString("F2");
+                //txtTotal.Text = (precioUnitario).ToString("F2");
+
+                //if (step3Ruta.descuentoMasUno)
+                //{
+                //    pnlDescuentoGrupo.IsVisible = true;
+                //    txtDescuentoGrupo.Text = "-10%";
+                //}
+                //pnlViajes.IsVisible = true;
+                //pnlEncomienda.IsVisible = false;
+                //pnlPasajeros.IsVisible = true;
                 txtTiempoAproxLlegada.Text = tiempoEstimadoViaje(tiempo);
-                txtPrecio.Text = (precioUnitario).ToString("F2");
-                txtTotal.Text = (precioUnitario).ToString("F2");
+                txtPrecio.Text = precioUnitario.ToString("F2");
+
+                decimal total = precioUnitario;
+
+                if (step3Ruta.descuentoMasUno)
+                {
+                    total *= 0.90m; // Aplica 10% de descuento
+
+                    pnlDescuentoGrupo.IsVisible = true;
+                    txtDescuentoGrupo.Text = "10%";
+                }
+                else
+                {
+                    pnlDescuentoGrupo.IsVisible = false;
+                }
+
+                txtTotal.Text = total.ToString("F2");
+
                 pnlViajes.IsVisible = true;
                 pnlEncomienda.IsVisible = false;
                 pnlPasajeros.IsVisible = true;
@@ -660,8 +688,9 @@ namespace PeterTours.Views.ViajeComp
                 {
                     decimal descuentoAplicar = (100 - descuento) / 100;
                     decimal calculoDescuento = Decimal.Parse(txtTotal.Text) * descuentoAplicar;
-                    txtTotal.Text = calculoDescuento.ToString();
+                    txtTotal.Text = calculoDescuento.ToString("F2");
                     txtCuponAplicado.Text = "Descuento del " + (int)Math.Round(descuento, 0) + "%!";
+                    pnlCupon.IsVisible = true;
                     btnCupon.IsEnabled = false;
                     txtCupon.IsEnabled = false;
                     btnCupon.BackgroundColor = Colors.LightGray;
